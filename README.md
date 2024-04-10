@@ -70,8 +70,8 @@ Spinning the Kafka container:
     -e KAFKA_OFFSET_TOPICS_REPLICATION_FACTOR=1
     confluentinc/cp-kafka`
 
-LISTENERS are what interfaces Kafka binds to. 
-ADVERTISED_LISTENERS are how clients can connect.
+LISTENERS: Listeners are all the addresses the Kafka broker listens on (it can be more than 1 address)
+ADVERTISED_LISTENERS: advertised listeners are the addresses other agents (producers, consumers, or brokers) need to connect to if they want to talk to the current broker.
 PLAINTEXT is the security protocol.
 
 
